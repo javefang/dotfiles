@@ -1,0 +1,20 @@
+[user]
+	name = Xinghong Fang
+	email = xinghong.fang@gmail.com
+
+[alias]
+	co = checkout
+	ci = commit
+	cia = commit --amend
+	st = status
+	br = branch
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	hist = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+	filehist = log -u
+	dl = "!git ll -1"
+	dc = diff --cached
+	dlc= diff --cached HEAD^
+	type = cat-file -t
+	dump = cat-file -p
+[core]
+	quotepath = false
