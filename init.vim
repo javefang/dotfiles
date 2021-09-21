@@ -18,6 +18,7 @@ Plug 'tpope/vim-commentary'
 Plug 'yggdroot/indentline'
 Plug 'ervandew/supertab'
 Plug 'airblade/vim-gitgutter'
+Plug 'dkarter/bullets.vim'
 
 " language support
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -28,6 +29,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'fatih/vim-go'
 Plug 'jamessan/vim-gnupg'
+Plug 'tsandall/vim-rego'
 call plug#end()
 
 " neovim provider
