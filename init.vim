@@ -18,7 +18,6 @@ Plug 'tpope/vim-commentary'
 Plug 'yggdroot/indentline'
 Plug 'ervandew/supertab'
 Plug 'airblade/vim-gitgutter'
-Plug 'dkarter/bullets.vim'
 
 " language support
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
