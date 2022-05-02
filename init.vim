@@ -29,6 +29,7 @@ Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'fatih/vim-go'
 Plug 'jamessan/vim-gnupg'
 Plug 'tsandall/vim-rego'
+Plug 'hashivim/vim-terraform'
 call plug#end()
 
 " neovim provider
@@ -82,6 +83,9 @@ set clipboard=unnamed
 " clear highlight on esc
 nnoremap <esc> :noh<return><esc>
 
+" jj to escape
+imap jj <esc>
+
 " auto show NERDTree when vim is called without file
 "autocmd StdinReadPre * let s:std_in=1
 "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
@@ -124,6 +128,9 @@ let g:javascript_plugin_flow = 1
 
 " disable completion in vim-go (using deoplete-go)
 let g:go_code_completion_enabled = 0
+
+" vim-terraform: enable align
+let g:terraform_fmt_on_save = 1
 
 " ale
 let g:ale_open_list = 0
