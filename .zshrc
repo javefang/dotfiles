@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/jave/.oh-my-zsh
+export ZSH=/Users/$(whoami)/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -95,7 +95,7 @@ source $ZSH/oh-my-zsh.sh
 # My customisations below #
 
 # make sure tmux and vim generate the correct colour
-export TERM='xterm-256color'
+export TERM='screen-256color'
 
 # less zsh magic
 setopt noautomenu
@@ -110,3 +110,13 @@ KEYTIMEOUT=1
 
 # add fzf shortcuts
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# aliases
+alias vim=nvim
+alias br="ddcctl -d 1 -b"
+
+# path
+export PATH=~/bin:$PATH
+
+# productivity booster
+eval $(thefuck --alias)
