@@ -18,3 +18,7 @@
 	dump = cat-file -p
 [core]
 	quotepath = false
+[init]
+	defaultBranch = main
+[pull]
+	ff = only
