@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -ux
+set -o noclobber
 
 this_dir=$(pwd)
 
