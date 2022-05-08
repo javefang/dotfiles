@@ -1,6 +1,6 @@
-background_opacity: 0.96
 window:
   dynamic_title: false
+  opacity: 0.96
 
 scrolling:
   history: 0
