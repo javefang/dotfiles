@@ -94,9 +94,6 @@ source $ZSH/oh-my-zsh.sh
 
 # My customisations below #
 
-# make sure tmux and vim generate the correct colour
-export TERM='screen-256color'
-
 # less zsh magic
 setopt noautomenu
 setopt nomenucomplete
