@@ -97,6 +97,7 @@ source $ZSH/oh-my-zsh.sh
 # less zsh magic
 setopt noautomenu
 setopt nomenucomplete
+setopt noshare_history
 unsetopt auto_cd
 
 # make vim fzf to respect gitignore
