@@ -103,9 +103,6 @@ unsetopt auto_cd
 # make vim fzf to respect gitignore
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 
-# fix python segfault https://stackoverflow.com/questions/58272830
-export DYLD_FALLBACK_LIBRARY_PATH=/usr/local/opt/openssl/lib
-
 # eliminate vim wait time when ESC is pressed
 KEYTIMEOUT=1
 
