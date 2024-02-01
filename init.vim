@@ -15,7 +15,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-commentary'
-Plug 'yggdroot/indentline'
+Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'ervandew/supertab'
 Plug 'airblade/vim-gitgutter'
 
@@ -146,9 +146,6 @@ let g:ale_fixers = {
 \  'python': ['black'],
 \  'go': ['goimports'],
 \}
-
-" indentline disable conceal quotes in JSON files
-let g:indentLine_setConceal = 0
 
 " airline
 let g:airline_theme='powerlineish'
