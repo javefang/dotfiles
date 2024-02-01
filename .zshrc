@@ -111,6 +111,7 @@ KEYTIMEOUT=1
 
 # aliases
 alias vim=nvim
+alias docker=podman
 alias br="ddcctl -d 1 -b"
 alias ds="ddcctl -d 1 -i '?' | grep VCP | grep 15 && ddcctl -d 1 -i 27 || ddcctl -d 1 -i 15" # toggle monitor input
 
