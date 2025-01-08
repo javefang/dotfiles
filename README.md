@@ -4,11 +4,9 @@ Bootstrap a macOS work environment from scratch
 
 - zsh
 - tmux
-- vim (neovim)
+- vim
 - git
 - alacritty
-
-# Pre-requisites
 
 ## Install homebrew
 
