@@ -26,5 +26,6 @@ function dolink {
 dolink .zshrc $HOME
 dolink .tmux.conf $HOME
 dolink .gitconfig $HOME
+dolink .editorconfig $HOME
 dolink alacritty.toml $HOME/.config/alacritty
 dolink init.vim $HOME/.config/nvim
