@@ -12,7 +12,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 
 " editing enhancement
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-commentary'
 Plug 'lukas-reineke/indent-blankline.nvim'
@@ -20,13 +20,8 @@ Plug 'ervandew/supertab'
 Plug 'airblade/vim-gitgutter'
 
 " language support
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'deoplete-plugins/deoplete-jedi'
-Plug 'deoplete-plugins/deoplete-go', { 'do': 'make' }
-Plug 'davidhalter/jedi-vim'
-Plug 'pangloss/vim-javascript'
-Plug 'MaxMEllon/vim-jsx-pretty'
-Plug 'fatih/vim-go'
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'jamessan/vim-gnupg'
 Plug 'tsandall/vim-rego'
 Plug 'hashivim/vim-terraform'
@@ -108,25 +103,14 @@ let g:SuperTabDefaultCompletionType = "context"
 
 " vim-go
 let g:go_code_completion_enabled = 1
+let g:go_fmt_autosave = 1
 let g:go_fmt_command = "goimports"
 let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_autosave = 0
 let g:go_auto_type_info = 1
 let g:go_addtags_transform = "snakecase"
 
-" deoplete
-let g:deoplete#enable_at_startup = 1
-call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
-
-" jedi
-let g:jedi#auto_vim_configuration = 0
-let g:jedi#show_call_signatures = 0
-let g:jedi#completions_enabled = 0  " handled by deoplete-jedi
-
-" javascript
-let g:javascript_plugin_flow = 1
-
-" disable completion in vim-go (using deoplete-go)
+" disable completion in vim-go (using coc)
 let g:go_code_completion_enabled = 0
 
 " vim-terraform: enable align
