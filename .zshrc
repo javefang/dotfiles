@@ -115,7 +115,8 @@ alias br="ddcctl -d 1 -b"
 alias ds="ddcctl -d 1 -i '?' | grep VCP | grep 15 && ddcctl -d 1 -i 27 || ddcctl -d 1 -i 15" # toggle monitor input
 
 # path
-export PATH=~/bin:$PATH
+export PATH=~/bin:$PATH:~/go/bin
+export GOPATH=~/go
 
 # productivity booster
 eval $(thefuck --alias)
