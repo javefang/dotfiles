@@ -21,6 +21,7 @@ Plug 'airblade/vim-gitgutter'
 " language support
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'rust-lang/rust.vim'
 Plug 'jamessan/vim-gnupg'
 Plug 'tsandall/vim-rego'
 Plug 'hashivim/vim-terraform'
