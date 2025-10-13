@@ -71,6 +71,50 @@ npm install -g neovim
 
 Start `nvim`, install neovim plugins with `:PlugInstall`
 
+## Development environment configuration
+
+### Go
+
+Install go
+
+```
+brew install go
+```
+
+Install `gopls`
+
+```
+go install golang.org/x/tools/cmd/gopls@latest
+```
+
+Install nvim coc plugins
+
+```
+:CocInstall coc-go
+```
+
+### Rust
+
+Install rust ([link]<https://doc.rust-lang.org/book/ch01-01-installation.html>)
+
+```
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+xcode-select --install
+```
+
+Install `rust-analyzer` ([link]<https://rust-analyzer.github.io/book/rust_analyzer_binary.html>)
+
+```
+curl -L https://github.com/rust-lang/rust-analyzer/releases/latest/download/rust-analyzer-aarch64-apple-darwin.gz | gunzip -c - > ~/.local/bin/rust-analyzer
+chmod +x .local/bin/rust-analyzer
+```
+
+Install nvim coc plugins
+
+```
+:CocInstall coc-rust
+```
+
 ## Productivity Tools
 
 - HomeBrew <https://brew.sh/>
