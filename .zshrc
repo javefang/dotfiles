@@ -117,6 +117,7 @@ alias ds="ddcctl -d 1 -i '?' | grep VCP | grep 15 && ddcctl -d 1 -i 27 || ddcctl
 # path
 export PATH=~/.local/bin:~/go/bin:$HOME/Library/Python/3.13/bin:$HOME/.linkerd2/bin:/opt/homebrew/bin:$PATH
 export GOPATH=~/go
+export GGSHIELD_FAKE_API_KEY_TEST=alksdjaklsdjijeiljasldij
 
 # productivity booster
 eval $(thefuck --alias)
