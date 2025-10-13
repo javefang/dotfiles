@@ -65,8 +65,8 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 Use brew-installed python3
 
 ```
-ln -s /opt/homebrew/bin/python3 /opt/homebrew/bin/python3.13
-ln -s /opt/homebrew/bin/pip3 /opt/homebrew/bin/pip3.13
+ln -s /opt/homebrew/bin/python3.13 /usr/local/bin/python3
+ln -s /opt/homebrew/bin/pip3.13 /usr/local/bin/pip3
 ```
 
 Install neovim providers <https://neovim.io/doc/user/provider.html>
