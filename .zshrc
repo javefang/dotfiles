@@ -101,7 +101,7 @@ setopt noshare_history
 unsetopt auto_cd
 
 # make vim fzf to respect gitignore
-export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob ""'
+export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!.git/"'
 
 # eliminate vim wait time when ESC is pressed
 KEYTIMEOUT=1
@@ -115,7 +115,7 @@ alias br="ddcctl -d 1 -b"
 alias ds="ddcctl -d 1 -i '?' | grep VCP | grep 15 && ddcctl -d 1 -i 27 || ddcctl -d 1 -i 15" # toggle monitor input
 
 # path
-export PATH=~/bin:$PATH:~/go/bin
+export PATH=~/bin:~/go/bin:$HOME/.linkerd2/bin:$PATH
 export GOPATH=~/go
 
 # productivity booster
