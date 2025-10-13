@@ -122,6 +122,26 @@ Install nvim coc plugins
 :CocInstall coc-rust
 ```
 
+### GitGuardian
+
+Install `pre-commit` framework
+
+```
+pip3 install pre-commit
+```
+
+Install `ggshield`
+
+```
+brew install ggshield
+```
+
+Sign-in
+
+```
+ggshield auth login
+```
+
 ## Productivity Tools
 
 - HomeBrew <https://brew.sh/>
