@@ -62,10 +62,17 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 
+Use brew-installed python3
+
+```
+ln -s /opt/homebrew/bin/python3 /opt/homebrew/bin/python3.13
+ln -s /opt/homebrew/bin/pip3 /opt/homebrew/bin/pip3.13
+```
+
 Install neovim providers <https://neovim.io/doc/user/provider.html>
 
 ```
-/usr/bin/python3 -m pip install --user --upgrade pynvim
+pip3 install --user --upgrade pynvim
 npm install -g neovim
 ```
 
