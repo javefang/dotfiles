@@ -1,0 +1,17 @@
+tmux
+git
+fzf
+ripgrep
+neovim
+jq
+pv
+nmap
+htop
+unar
+python314
+py314-pip
+nodejs24
+npm11
+go
+thefuck
+py313-setuptools

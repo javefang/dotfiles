@@ -22,6 +22,10 @@ Restore brew packages
 brew bundle
 ```
 
+## (Alternative) MacPorts
+
+cat ports.txt | xargs sudo port -N install
+
 ## Install font
 
 Download `Menlo for Powerline.ttf` and double-click to install.
@@ -62,11 +66,11 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 
-Use brew-installed python3
+Use brew-installed python3 (instruction depending on python3 version used), e.g.
 
 ```
-ln -s /opt/homebrew/bin/python3.13 /usr/local/bin/python3
-ln -s /opt/homebrew/bin/pip3.13 /usr/local/bin/pip3
+ln -s /opt/local/bin/python3 /usr/local/bin/python3
+ln -s /opt/local/bin/pip-3.14 /usr/local/bin/pip3
 ```
 
 Install neovim providers <https://neovim.io/doc/user/provider.html>
@@ -91,7 +95,7 @@ brew install go
 Install `gopls`
 
 ```
-go install golang.org/x/tools/cmd/gopls@latest
+go install golang.org/x/tools/gopls@latest
 ```
 
 Install nvim coc plugins
@@ -119,7 +123,7 @@ chmod +x .local/bin/rust-analyzer
 Install nvim coc plugins
 
 ```
-:CocInstall coc-rust
+:CocInstall coc-rust-analyzer
 ```
 
 ### GitGuardian

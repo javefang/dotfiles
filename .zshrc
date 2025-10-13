@@ -115,8 +115,9 @@ alias br="ddcctl -d 1 -b"
 alias ds="ddcctl -d 1 -i '?' | grep VCP | grep 15 && ddcctl -d 1 -i 27 || ddcctl -d 1 -i 15" # toggle monitor input
 
 # path
-export PATH=~/.local/bin:~/go/bin:$HOME/Library/Python/3.13/bin:$HOME/.linkerd2/bin:$PATH
+export PATH=~/.local/bin:~/go/bin:$HOME/Library/Python/3.14/bin:$HOME/.linkerd2/bin:$PATH
 export GOPATH=~/go
 
-# productivity booster
-eval $(thefuck --alias)
+# homebrew
+export HOMEBREW_NO_AUTO_UPDATE=1
+

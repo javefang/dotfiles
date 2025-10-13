@@ -1,4 +1,3 @@
-tap "homebrew/bundle"
 tap "ngrok/ngrok"
 brew "cfssl"
 brew "fzf"
