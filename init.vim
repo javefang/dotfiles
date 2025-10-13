@@ -113,6 +113,17 @@ let g:go_addtags_transform = "snakecase"
 " disable completion in vim-go (using coc)
 let g:go_code_completion_enabled = 0
 
+let g:go_debug_mappings = {
+    \ '(go-debug-continue)': {'key': 'c', 'arguments': '<nowait>'},
+    \ '(go-debug-next)': {'key': 'n', 'arguments': '<nowait>'},
+    \ '(go-debug-step)': {'key': 's'},
+    \ '(go-debug-print)': {'key': 'p'},
+\}
+map <leader>ds :GoDebugStart<cr>
+map <leader>dt :GoDebugStop<cr>
+map <leader>db :GoDebugBreakpoint<cr>
+
+
 " vim-terraform: enable align
 let g:terraform_fmt_on_save = 1
 
