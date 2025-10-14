@@ -102,16 +102,13 @@ command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-hea
 let g:SuperTabDefaultCompletionType = "context"
 
 " vim-go
-let g:go_code_completion_enabled = 1
+let g:go_code_completion_enabled = 0  " disable to avoid conflict with coc
 let g:go_fmt_autosave = 1
 let g:go_fmt_command = "goimports"
 let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_autosave = 0
 let g:go_auto_type_info = 1
 let g:go_addtags_transform = "snakecase"
-
-" disable completion in vim-go (using coc)
-let g:go_code_completion_enabled = 0
 
 let g:go_debug_mappings = {
     \ '(go-debug-continue)': {'key': 'c', 'arguments': '<nowait>'},
