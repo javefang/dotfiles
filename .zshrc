@@ -101,7 +101,7 @@ setopt noshare_history
 unsetopt auto_cd
 
 # make vim fzf to respect gitignore
-export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!.git/"'
+export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!.git/" --glob "!venv"'
 
 # eliminate vim wait time when ESC is pressed
 KEYTIMEOUT=1
