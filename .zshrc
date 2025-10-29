@@ -121,3 +121,5 @@ export GOPATH=~/go
 # homebrew
 export HOMEBREW_NO_AUTO_UPDATE=1
 
+# gpg
+export GPG_TTY=$(tty)
