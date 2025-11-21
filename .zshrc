@@ -100,6 +100,9 @@ setopt nomenucomplete
 setopt noshare_history
 unsetopt auto_cd
 
+# do not overwrite
+setopt noclobber
+
 # make vim fzf to respect gitignore
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!.git/" --glob "!venv"'
 
